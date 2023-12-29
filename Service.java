@@ -33,19 +33,20 @@ public class Service {
             int count2 = ourToys.get(1).getCount();
             int count3 = ourToys.get(2).getCount();
             for (int i = 0; i < 10; i++) {
-                int randomNumber = random.nextInt(11);
+                int randomNumber = random.nextInt(10);
+                System.out.println(randomNumber);
                 if (((randomNumber == 1) || (randomNumber == 2) || (randomNumber == 3))
                         && (count3 > 0)) {
                     writer.println("id игрушки: " + 3);
                     count3 = count3 - 1;
-                } else if (((randomNumber == 4) || (randomNumber == 5) || (randomNumber == 6))
+                } else if (((randomNumber == 4) || (randomNumber == 5) || (randomNumber == 0))
                         && (count3 > 0)) {
                     writer.println("id игрушки: " + 3);
                     count3 = count3 - 1;
-                } else if ((randomNumber == 7 || randomNumber == 8) && (count1 > 0)) {
+                } else if ((randomNumber == 7 || randomNumber == 6) && (count1 > 0)) {
                     writer.println("id игрушки: " + 1);
                     count1 = count1 - 1;
-                } else if ((randomNumber == 9 || randomNumber == 10) && (count2 > 0)) {
+                } else if ((randomNumber == 9 || randomNumber == 8) && (count2 > 0)) {
                     writer.println("id игрушки: " + 2);
                     count2 = count2 - 1;
                 } else {
